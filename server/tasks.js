@@ -9,7 +9,7 @@ export const tasks = [
         text: 'Read a book 📚',
     },
     {
-        text: 'Do some code 🖥️',
+        text: 'Learn Meteor 🖥',
     },
     {
         text: 'Go walking 🌳',
