@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+  --font: 'Itim', cursive;
+  --color-01: #45526c;
+  --color-02: #f8f5f1;
+  --color-03: #5AA897;
+  --color-04: #f8a488;
+  --color-05: #aaa;
+}
+
+* {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+/* * * * *
+* @body * 
+*/
+body {
+  font-family: var(--font);
+  margin: 0;
+  background-color: var(--color-02);
+}
+
+/* * * * *
+* @app  * 
+*/
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* * * * *
+* @main * 
+*/
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  height: 100%;
+  padding: 1rem;
+}
+
+/* * * * * * * *
+* @login-form * 
+*/
+.login-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.login-form__field {
+  margin-bottom: 2rem;
+}
+
+.login-form__label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color-01)
+}
+
+.login-form__input {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid var(--color-05);
+  width: 100%;
+  margin-right: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--color-01);
+  font-family: (var(--font));
+  font-size: 1rem;
+}
+
+.login-form__input:focus {
+  outline: 0;
+  border: 2px solid var(--color-01);
+}
+
+.login-form__submit {
+  margin-top: 1rem;
+}
+
+/* * * * * *
+* @button * 
+*/
+button {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--color-03);
+  color: var(--color-02);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  color: var(--color-01);
+}
+
+/* * * * * *
+* @header * 
+*/
+.header {
+  color: var(--color-02);
+  background-color: var(--color-01);
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 2rem;
+  margin: 0;
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.header__pending {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.header__informations {
+  display: flex;
+  align-items: center;
+}
+
+.header__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.header__logout {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.header__logout:hover {
+  cursor: pointer;
+  color: var(--color-03);
+}
+
+/* * * * * * *
+* @task-form * 
+*/
+.task-form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 1.3rem;
+}
+
+.task-form__input {
+  padding: 1.2rem;
+  background: transparent;
+  border: 1px solid var(--color-05);
+  width: 100%;
+  font-family: var(--font);
+  font-size: 1.2em;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.task-form__input:focus {
+  outline: 0;
+  border: 2px solid var(--color-01);
+}
+
+.task-form__submit {
+  width: 70px;
+  font-size: 2rem;
+  background-color: var(--color-03);
+}
+
+.task-form__submit:hover {
+  color: var(--color-01)
+}
+
+/* * * * *
+* @filter * 
+*/
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter__button {
+  width: 100%;
+}
+
+/* * * * *
+* @tasks * 
+*/
+.tasks {
+  padding: 0;
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+/* * * * *
+* @task * 
+*/
+.task {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: #eee solid 1px;
+}
+
+
+/* * * * *
+* @task * 
+*/
+.task:first-of-type {
+  margin-top: 2rem;
+  border-top: #eee solid 1px;
+}
+
+.task__text {
+  flex-grow: 1;
+}
+
+.task__checkbox {
+  margin-right: 1rem;
+  color: var(--color-03);
+}
+
+.task__delete {
+  background-color: var(--color-04);
+}
+
+.task__delete--icon {
+  color: var(--color-02);
+}
+
+/* * * * * *
+* @loading * 
+*/
+.loading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (min-width: 500px) {
+
+  .login-form__label {
+    font-size: 2rem;
+  }
+
+  .login-form__input {
+    font-size: 1.2rem;
+  }
+
+  .login-form__submit {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+
+  .header__title {
+    font-size: 3rem;
+  }
+  
+  .header__pending {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .header__user {
+    font-size: 1.5rem;
+  }
+
+  .header__logout {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .task-form__input {
+    font-size: 1.5em;
+  }
+
+  .tasks {
+    font-size: 1.5rem;
+  }
+
+  .filter {
+    justify-content: flex-start;
+  }
+
+  .filter__button {
+    width: auto;
+  }
+
+  
+}
