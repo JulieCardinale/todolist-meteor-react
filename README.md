@@ -55,8 +55,10 @@ A simple to do list, made to practice Meteor framework.
 
 ## To do
 
+* Update a task
 * Handle errors in forms
 * Create account
+* Change loader
 
 ## Run the app
 
