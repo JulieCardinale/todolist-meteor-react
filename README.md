@@ -31,7 +31,7 @@ A simple to do list, made to practice Meteor framework.
   <a href="#main-features">Main Features</a> •
   <a href="#to-do">To do</a> •
   <a href="#run-the-app">Run the app</a> •
-  <a href="#users-list">Users list</a>
+  <a href="#default-users-list">Default users list</a>
 </p>
 
 <br>
@@ -75,7 +75,7 @@ $ meteor npm install
 $ meteor
 
 ```
-## Users list
+## Default users list
 
 ```js
 [
