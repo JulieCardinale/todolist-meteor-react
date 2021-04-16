@@ -15,7 +15,7 @@ A simple to do list, made to practice Meteor framework.
         <img src="https://jcdle-porfolio.herokuapp.com/images/tools/icon_html.png" alt="html5" width="50" height="50"/> 
     </a>
     <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" rel="noopener noreferrer"> 
-        <img src="https://jcdle-porfolio.herokuapp.com/images/tools/icon_css.png" alt="sass" width="50" height="50"/>
+        <img src="https://jcdle-porfolio.herokuapp.com/images/tools/icon_css.png" alt="css" width="50" height="50"/>
     </a>
     <a href="https://fr.reactjs.org" target="_blank" rel="noopener noreferrer">
         <img src="https://jcdle-porfolio.herokuapp.com/images/tools/icon_react.png" alt="react" width="55" height="50"/>
